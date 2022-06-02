@@ -224,18 +224,20 @@ html {
     z-index: 1000;
   }
 
-  .sp_canhan .box_profile .name{
+    .sp_canhan .box_profile .name{
     font-size: 1.5rem;
-    color: #012546;
+    color: red;
     padding: 1rem;
   }
 
   .sp_canhan .box_profile .class{
-    font-size: 1.5rem;    color: #012546;
+    font-size: 1.5rem;    
+    color: red;
     padding: 1rem;
   }
 
   .sp_canhan .box_profile .phone{
-    font-size: 1.5rem;    color: #012546;
+    font-size: 1.5rem;    
+    color: red;
     padding: 1rem;
   }

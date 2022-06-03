@@ -39,7 +39,7 @@ html {
 .header .top{
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 0 0 16.8vw rgb(0 0 0 / 50%);
+    box-shadow: 0 0 0 15.3vw rgba(0, 0, 0, 0.5);
     font-size: 1.5rem;
     color: rgba(255, 255, 255);
     text-transform: uppercase;
@@ -96,15 +96,18 @@ html {
 .body .profile .profile_user{
     margin-bottom: 7rem;
     font-size: 2rem;
+    padding: 1.5rem;
     cursor: pointer;
 }
 
 .body .profile .profile_user:hover{
-    color: #012546;
+    color: #6b4bdd;
+    background-color: #c1c0c3;
+    border-radius: 2.5rem;
 }
 
 .body .profile .profile_user:hover .space_2{
-    border-top: .1rem solid #012546;
+    border-top: .1rem solid #6b4bdd;
 }
 
 .body .profile .profile_user .space_2{
@@ -125,6 +128,7 @@ html {
     padding: 2rem;
     text-align: center;
     transform: scaleY(0);
+    border-radius: 2.5rem;    
   }
   
   .login-form.active {
@@ -137,9 +141,12 @@ html {
   }
 
   .login-form h2{
-      font-size: 2rem;
-      font-weight: 700;
-      text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    border-bottom:.1rem solid #02294f;
+    margin: 0rem 6rem 1rem 6rem;
   }
 
   .login-form .box_profile .name{
@@ -162,6 +169,16 @@ html {
     padding: 1rem;
   }
 
+  .login-form .box_profile .code{
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .login-form .box_profile .email{
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
   .ket_qua {
     position: absolute;
     top: 0;
@@ -172,6 +189,7 @@ html {
     padding: 2rem;
     text-align: center;
     transform: scaleY(0);
+    border-radius: 2.5rem;    
   }
   
   .ket_qua.active {
@@ -182,6 +200,14 @@ html {
     margin-top: 15rem;
     z-index: 1000;
   }
+
+  .ket_qua h2{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom:.1rem solid #02294f;
+   margin: 0rem 7rem 1rem 7rem;
+}
 
   .ket_qua .box_profile .name{
     font-size: 1.5rem;
@@ -213,6 +239,7 @@ html {
     padding: 2rem;
     text-align: center;
     transform: scaleY(0);
+    border-radius: 2.5rem;    
   }
   
   .sp_canhan.active {
@@ -224,20 +251,121 @@ html {
     z-index: 1000;
   }
 
-    .sp_canhan .box_profile .name{
+  .sp_canhan h2{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom:.1rem solid #02294f;
+   margin: 0rem 7rem 1rem 7rem;
+}
+
+  .sp_canhan .box_profile a{
+    color: #f5bf23;
+  }
+
+  .sp_canhan .box_profile .name { 
     font-size: 1.5rem;
-    color: red;
     padding: 1rem;
   }
 
+  .sp_canhan .box_profile .phone:hover,
+  .sp_canhan .box_profile .class:hover,
+  .sp_canhan .box_profile .name:hover {
+    background-color: #012546;
+    cursor: pointer;
+    border-radius: 2.5rem;
+  } 
+
   .sp_canhan .box_profile .class{
     font-size: 1.5rem;    
-    color: red;
     padding: 1rem;
   }
 
   .sp_canhan .box_profile .phone{
     font-size: 1.5rem;    
-    color: red;
     padding: 1rem;
+  }
+
+  .thu_vien {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    width: 102rem;
+    height: 69rem;
+    padding: 2rem 2.5rem 2rem 2rem;
+    text-align: center;
+    transform: scaleY(0);
+    border-radius: 2.5rem;    
+  }
+  
+  .thu_vien.active {
+    transform: scaleY(1);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7rem;
+    z-index: 1000;
+  }
+
+  .thu_vien h2{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .thu_vien .box_profile{
+    display: grid;
+    grid-template-columns: 24rem 24rem 24rem 24rem;
+    grid-template-rows: 20rem 20rem 20rem;
+    gap: .5rem;
+
+  }
+
+  .thu_vien .box_profile .img_1{
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+
+  .thu_vien .box_profile .img_2{
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+
+  .thu_vien .box_profile .img_3{
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+
+  .thu_vien .box_profile .img_4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .thu_vien .box_profile .img_5{
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .thu_vien .box_profile .img_6{
+    grid-column: 4/5;
+    grid-row: 2/4;
+  }
+
+  .thu_vien .box_profile .img_7{
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .thu_vien .box_profile .img_8{
+    grid-column: 3/4;
+    grid-row: 3/4;
   }

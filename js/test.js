@@ -38,6 +38,7 @@ window.onscroll = () =>{
     spCanhan.classList.remove('active');
     ketQua.classList.remove('active');
     loginForm.classList.remove('active');
+    thuVien.classList.remove('active');
 }
 
 
